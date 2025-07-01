@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: slack-bolt-container
-          image: trialymloms.jfrog.io/bot-docker/slack-bolt-app:1.13
+          image: trialymloms.jfrog.io/bot-docker/slack-bolt-app:1.14
           ports:
             - containerPort: 3000                  # Change if your app listens on another port
           env:
