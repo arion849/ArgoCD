@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: slack-bolt-container
-          image: arion849/slack-bolt-app:latest   # Your Docker Hub image
+          image: trialymloms.jfrog.io/bot-docker/slack-bolt-app:latest   # Your Docker Hub image
           ports:
             - containerPort: 3000                  # Change if your app listens on another port
           env:
