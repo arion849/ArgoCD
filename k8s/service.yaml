@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: slack-bolt-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: slack-bolt
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 3000  # Your app port
+      targetPort: 3000
+      nodePort: 30080 
