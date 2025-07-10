@@ -18,7 +18,7 @@ spec:
         - name: jfrog-registry-secret   # <-- added here
       containers:
         - name: slack-bolt-container
-          image: trialymloms.jfrog.io/bot-docker/slack-bolt-app:1.14
+          image: trialymloms.jfrog.io/bot-docker/slack-bolt-app:1.15
           ports:
             - containerPort: 3000
           env:
